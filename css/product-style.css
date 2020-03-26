@@ -1,0 +1,104 @@
+.swiper-container {
+	width: 100%;
+	height: 100%
+}
+
+.swiper-wrapper {
+	cursor: grab
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+	left: 1px !important
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+	right: 1px !important
+}
+
+.swiper-pagination-bullet {
+	background: var(--secondary);
+	opacity: .5
+}
+
+.swiper-pagination-bullet-active {
+	opacity: 1 !important;
+	background-color: var(--primary);
+}
+
+.swiper-button-next,
+.swiper-container-rtl {
+	background-image: none;
+}
+
+.swiper-button-next::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f054";
+	color: var(--primary);
+	position: absolute;
+	font-size: 2rem;
+	right: 0;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl {
+	background-image: none;
+}
+
+.swiper-button-prev::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f053";
+	color: var(--primary);
+	position: absolute;
+	font-size: 2rem;
+	left: 0;
+}
+
+.product-card a:hover {
+	text-decoration: none;
+}
+
+.products .card .star-rating,
+.card .star-rating {
+	float: none;
+	margin: 1rem auto;
+}
+
+.product-card .star-rating {
+	float: right;
+	overflow: hidden;
+	position: relative;
+	height: 1em;
+	line-height: 1;
+	font-size: 1em;
+	width: 5.4em;
+	font-family: star;
+}
+
+.product-card .star-rating::before {
+	content: "\73\73\73\73\73";
+	color: #d3ced2;
+	float: left;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+.product-card .star-rating span {
+	overflow: hidden;
+	float: left;
+	top: 0;
+	left: 0;
+	position: absolute;
+	padding-top: 1.5em;
+}
+
+.product-card .star-rating span::before {
+	content: "\53\53\53\53\53";
+	top: 0;
+	position: absolute;
+	left: 0;
+}
