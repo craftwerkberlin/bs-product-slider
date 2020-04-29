@@ -1,6 +1,6 @@
 <?php
 /*Plugin Name: Product Slider for bootScore
-Plugin URI: https://bootscore.me
+Plugin URI: https://bootscore.me/plugins/product-slider/
 Description: WooCommerce Product slider for bootScore theme https://bootscore.me. Use Shortcode like this [product-slider type="product" order="DESC" orderby="date" posts="12"] and read readme.txt in PlugIn folder for options.
 Version: 1.0.0
 Author: Bastian Kreiter
