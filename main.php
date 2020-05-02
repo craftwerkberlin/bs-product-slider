@@ -1,8 +1,8 @@
 <?php
 /*Plugin Name: Product Slider for bootScore
 Plugin URI: https://bootscore.me/plugins/product-slider/
-Description: WooCommerce Product slider for bootScore theme https://bootscore.me. Use Shortcode like this [product-slider type="product" order="DESC" orderby="date" posts="12"] and read readme.txt in PlugIn folder for options.
-Version: 1.0.0
+Description: WooCommerce Product slider for bootScore theme https://bootscore.me. Use Shortcode like this [product-slider order="DESC" orderby="date" posts="12" category="sample-category, test-category"] and read readme.txt in PlugIn folder for options.
+Version: 1.0.1
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
 License: GPLv2
@@ -34,18 +34,18 @@ add_shortcode( 'product-slider', 'bootscore_product_slider' );
 function bootscore_product_slider( $atts ) {
 	ob_start();
 	extract( shortcode_atts( array (
-		'type' => 'post',
+		'type' => 'product',
 		'order' => 'date',
 		'orderby' => 'date',
 		'posts' => -1,
 		'category' => '',
 	), $atts ) );
 	$options = array(
-		'post_type' => $type,
 		'order' => $order,
 		'orderby' => $orderby,
 		'posts_per_page' => $posts,
-		'category_name' => $category,
+		//'product_cat'    => $atts['category'],
+        'product_cat'    => $category,
 	);
 	$query = new WP_Query( $options );
 	if ( $query->have_posts() ) { ?>
