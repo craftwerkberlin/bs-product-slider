@@ -27,7 +27,7 @@ Options:
 
 order: ASC or DESC
 orderby: date or title
-posts: number of posts to display
+posts: number of products to display
 category: category slug, seperated by comma for multiple categories
 
 
