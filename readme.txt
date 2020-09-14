@@ -1,4 +1,4 @@
-=== Product Slider ===
+=== bS Product Slider ===
 
 Contributors: craftwerk
 
@@ -27,7 +27,7 @@ Options:
 
 order: ASC or DESC
 orderby: date or title
-posts: number of products to display
+posts: number of posts to display
 category: category slug, seperated by comma for multiple categories
 
 
