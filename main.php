@@ -1,8 +1,8 @@
 <?php
 /*Plugin Name: bS Product Slider
-Plugin URI: https://bootscore.me/plugins/product-slider/
-Description: WooCommerce Product slider for bootScore theme https://bootscore.me. Use Shortcode like this [product-slider order="DESC" orderby="date" posts="12" category="sample-category, test-category"] and read readme.txt in PlugIn folder for options.
-Version: 1.0.1
+Plugin URI: https://bootscore.me/plugins/bs-product-slider/
+Description: WooCommerce Product slider for bootScore theme https://bootscore.me. Use Shortcode like this [bs-product-slider order="DESC" orderby="date" posts="12" category="sample-category, test-category"] and read readme.txt in PlugIn folder for options.
+Version: 1.0.2
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
 License: GPLv2
@@ -30,7 +30,7 @@ add_action('wp_enqueue_scripts','product_scripts');
 
 
 // Product Slider Shortcode
-add_shortcode( 'product-slider', 'bootscore_product_slider' );
+add_shortcode( 'bs-product-slider', 'bootscore_product_slider' );
 function bootscore_product_slider( $atts ) {
 	ob_start();
 	extract( shortcode_atts( array (
@@ -53,7 +53,7 @@ function bootscore_product_slider( $atts ) {
 
 <!-- Swiper -->
 
-<div class="px-5 position-relative my-5">
+<div class="px-5 position-relative my-5 product-slider">
 
     <div class="swiper-container">
 

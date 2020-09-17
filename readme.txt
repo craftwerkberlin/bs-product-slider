@@ -3,9 +3,9 @@
 Contributors: craftwerk
 
 Requires at least: 4.5
-Tested up to: 5.3.2
+Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,10 @@ category: category slug, seperated by comma for multiple categories
 
 
 == Changelog ==
+
+    = 1.0.2 - May 02 2020 =
+    
+        * Renamed plugin and shortcode
 
     = 1.0.1 - May 02 2020 =
     

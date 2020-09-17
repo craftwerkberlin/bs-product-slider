@@ -102,3 +102,8 @@
 	position: absolute;
 	left: 0;
 }
+
+.product-slider .swiper-button-next:focus, .product-slider .swiper-button-prev:focus {
+    outline: none;
+    box-shadow: none;
+}
