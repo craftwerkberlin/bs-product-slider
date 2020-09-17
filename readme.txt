@@ -21,7 +21,7 @@ Product Slider for WooCommerce bootScore WordPress Theme made with Swiper, Copyr
 
 Use a shortcode like this to display your Products in a Page:
 
-[product-slider order="DESC" orderby="date" posts="12" category="sample-category, test-category"]
+[bs-product-slider order="DESC" orderby="date" posts="12" category="sample-category, test-category"]
 
 Options:
 
